@@ -1,0 +1,135 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{Abrial, Moudden, Starck, Afeyan, Bobin, Fadili
+   \& Nguyen}{Abrial et~al.}{2007}]{inpaint}
+Abrial P.,  Moudden Y.,  Starck J.-L.,  Afeyan B.,  Bobin J.,  Fadili J.,
+  Nguyen M.,  2007, \mn@doi [Journal of Fourier Analysis and Applications]
+  {10.1007/s00041-006-6908-x}, 13, 729
+
+\bibitem[\protect\citeauthoryear{{Bennett} et~al.,}{{Bennett}
+  et~al.}{2013}]{bennett}
+{Bennett} C.~L.,  et~al., 2013, \mn@doi [\apjs] {10.1088/0067-0049/208/2/20},
+  \href {http://adsabs.harvard.edu/abs/2013ApJS..208...20B} {208, 20}
+
+\bibitem[\protect\citeauthoryear{{B{\'e}thermin}, {Wang}, {Dor{\'e}},
+  {Lagache}, {Sargent}, {Daddi}, {Cousin}  \& {Aussel}}{{B{\'e}thermin}
+  et~al.}{2013}]{bethermin}
+{B{\'e}thermin} M.,  {Wang} L.,  {Dor{\'e}} O.,  {Lagache} G.,  {Sargent} M.,
+  {Daddi} E.,  {Cousin} M.,   {Aussel} H.,  2013, \mn@doi [\aap]
+  {10.1051/0004-6361/201321688}, 557, A66
+
+\bibitem[\protect\citeauthoryear{{Bobin}, {Moudden}, {Starck}, {Fadili}  \&
+  {Aghanim}}{{Bobin} et~al.}{2008}]{gmca}
+{Bobin} J.,  {Moudden} Y.,  {Starck} J.-L.,  {Fadili} J.,   {Aghanim} N.,
+  2008, \mn@doi [Statistical Methodology] {10.1016/j.stamet.2007.10.003}, \href
+  {http://adsabs.harvard.edu/abs/2008StMet...5..307B} {5, 307}
+
+\bibitem[\protect\citeauthoryear{{Bobin}, {Rapin}, {Larue}  \&
+  {Starck}}{{Bobin} et~al.}{2015}]{amca}
+{Bobin} J.,  {Rapin} J.,  {Larue} A.,   {Starck} J.-L.,  2015, \mn@doi [IEEE
+  Transactions on Signal Processing] {10.1109/TSP.2015.2391071}, \href
+  {http://adsabs.harvard.edu/abs/2015ITSP...63.1199B} {63, 1199}
+
+\bibitem[\protect\citeauthoryear{{Bobin}, {Sureau}  \& {Starck}}{{Bobin}
+  et~al.}{2016}]{lgmca}
+{Bobin} J.,  {Sureau} F.,   {Starck} J.-L.,  2016, \mn@doi [\aap]
+  {10.1051/0004-6361/201527822}, 591, A50
+
+\bibitem[\protect\citeauthoryear{{Compi{\`e}gne} et~al.,}{{Compi{\`e}gne}
+  et~al.}{2011}]{comp11}
+{Compi{\`e}gne} M.,  et~al., 2011, \mn@doi [\aap]
+  {10.1051/0004-6361/201015292}, 525, A103
+
+\bibitem[\protect\citeauthoryear{{Draine} \& {Li}}{{Draine} \&
+  {Li}}{2007}]{draine}
+{Draine} B.~T.,  {Li} A.,  2007, \mn@doi [\apj] {10.1086/511055}, \href
+  {http://adsabs.harvard.edu/abs/2007ApJ...657..810D} {657, 810}
+
+\bibitem[\protect\citeauthoryear{{Finkbeiner}, {Davis}  \&
+  {Schlegel}}{{Finkbeiner} et~al.}{1999}]{fds}
+{Finkbeiner} D.~P.,  {Davis} M.,   {Schlegel} D.~J.,  1999, \mn@doi [\apj]
+  {10.1086/307852}, \href {http://adsabs.harvard.edu/abs/1999ApJ...524..867F}
+  {524, 867}
+
+\bibitem[\protect\citeauthoryear{{G{\'o}rski}, {Hivon}, {Banday}, {Wandelt},
+  {Hansen}, {Reinecke}  \& {Bartelmann}}{{G{\'o}rski} et~al.}{2005}]{healpix}
+{G{\'o}rski} K.~M.,  {Hivon} E.,  {Banday} A.~J.,  {Wandelt} B.~D.,  {Hansen}
+  F.~K.,  {Reinecke} M.,   {Bartelmann} M.,  2005, \mn@doi [\apj]
+  {10.1086/427976}, \href {http://adsabs.harvard.edu/abs/2005ApJ...622..759G}
+  {622, 759}
+
+\bibitem[\protect\citeauthoryear{{Jones}, {Fanciullo}, {K{\"o}hler},
+  {Verstraete}, {Guillet}, {Bocchio}  \& {Ysard}}{{Jones} et~al.}{2013}]{jones}
+{Jones} A.~P.,  {Fanciullo} L.,  {K{\"o}hler} M.,  {Verstraete} L.,  {Guillet}
+  V.,  {Bocchio} M.,   {Ysard} N.,  2013, \mn@doi [\aap]
+  {10.1051/0004-6361/201321686}, \href
+  {http://adsabs.harvard.edu/abs/2013A%26A...558A..62J} {558, A62}
+
+\bibitem[\protect\citeauthoryear{{Kalberla}, {Burton}, {Hartmann}, {Arnal},
+  {Bajaja}, {Morras}  \& {P{\"o}ppel}}{{Kalberla} et~al.}{2005}]{lab}
+{Kalberla} P.~M.~W.,  {Burton} W.~B.,  {Hartmann} D.,  {Arnal} E.~M.,  {Bajaja}
+  E.,  {Morras} R.,   {P{\"o}ppel} W.~G.~L.,  2005, \mn@doi [\aap]
+  {10.1051/0004-6361:20041864}, 440, 775
+
+\bibitem[\protect\citeauthoryear{{Lagache}, {Puget}  \& {Dole}}{{Lagache}
+  et~al.}{2005}]{lagache}
+{Lagache} G.,  {Puget} J.-L.,   {Dole} H.,  2005, \mn@doi [\araa]
+  {10.1146/annurev.astro.43.072103.150606}, 43, 727
+
+\bibitem[\protect\citeauthoryear{{Meisner} \& {Finkbeiner}}{{Meisner} \&
+  {Finkbeiner}}{2015}]{meis}
+{Meisner} A.~M.,  {Finkbeiner} D.~P.,  2015, \mn@doi [\apj]
+  {10.1088/0004-637X/798/2/88}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJ...798...88M} {798, 88}
+
+\bibitem[\protect\citeauthoryear{{Miville-Desch{\^e}nes} \&
+  {Lagache}}{{Miville-Desch{\^e}nes} \& {Lagache}}{2005}]{iris}
+{Miville-Desch{\^e}nes} M.-A.,  {Lagache} G.,  2005, \mn@doi [\apjs]
+  {10.1086/427938}, \href {http://adsabs.harvard.edu/abs/2005ApJS..157..302M}
+  {157, 302}
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2014}]{pr2}
+{Planck Collaboration} et~al., 2014, \mn@doi [\aap]
+  {10.1051/0004-6361/201323195}, 571, A11
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2016a}]{planckCompSep}
+{Planck Collaboration} et~al., 2016a, \mn@doi [\aap]
+  {10.1051/0004-6361/201525936}, 594, A9
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2016b}]{ffp}
+{Planck Collaboration} et~al., 2016b, \mn@doi [\aap]
+  {10.1051/0004-6361/201527103}, 594, A12
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2016c}]{gnilc}
+{Planck Collaboration} et~al., 2016c, \mn@doi [\aap]
+  {10.1051/0004-6361/201629022}, 596, A109
+
+\bibitem[\protect\citeauthoryear{{Starck}, {Moudden}, {Bobin}, {Elad}  \&
+  {Donoho}}{{Starck} et~al.}{2005}]{mca}
+{Starck} J.-L.,  {Moudden} Y.,  {Bobin} J.,  {Elad} M.,   {Donoho} D.~L.,
+  2005, in {Papadakis} M.,  {Laine} A.~F.,   {Unser} M.~A.,  eds,  \procspie
+  Vol. 5914, Wavelets XI. pp 209--223, \mn@doi{10.1117/12.615237}
+
+\makeatother
+\end{thebibliography}
