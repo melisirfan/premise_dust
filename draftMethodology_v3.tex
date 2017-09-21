@@ -322,12 +322,12 @@ The {\texttt{premise}} fitting process works on each of the twelve 2048X2048, {\
 \begin{enumerate}[label*=\arabic*.]
 \item The noise covariance matrix (${\bf{R}}_{n}$) of the full data face is calculated within the wavelet domain:
 \begin{eqnarray}
-{\bf{R}}_{n}^{j} = \frac{1}{2048^2} \left( {\bf{ \Phi}}^{j} {\bf{X}}_{n} \;  (\Phi^{j} {\bf{X}}_{n})^{T} \right),
+{\bf{R}}_{n}^{j} = \frac{1}{2048^2} \left( {\bf{W}}_{j}^{n} \;  ({\bf{W}}_{j}^{n})^{T} \right),
 \end{eqnarray} 
 where 
 \begin{eqnarray}
 \nonumber
- {\bf{X}}_{n} = \rm{noise + CIB \, anisotropies - CIB \, offset}
+ {\bf{W}}_{j}^{n} =  {\bf{W}}_{j}^{\rm{noise}}  + {\bf{W}}_{j}^{\rm{CIB}} - {\bf{W}}_{j}^{\rm{CIB \, offset}} 
  \end{eqnarray} 
 \item The region is split into patches of 128X128
 \item Each patch is treated as a super-pixel: the mean flux density for each frequency represents the whole patch at that frequency	
@@ -336,10 +336,10 @@ where
 $$
 \rm{Residual}[k] = \rm{Total \, Flux}[k] -  \rm{Estimated \, thermal \, dust \, flux}[k] 
 $$
-\item This residual matrix (${\bf{X}}_{r}$, which has dimensions of number of frequencies by number of pixels) is transformed into the wavelet domain. 
+\item This residual matrix (which has dimensions of number of frequencies by number of pixels) is transformed into the wavelet domain (${\bf{W}}_{j}^{r}$). 
 \item The reduced $\chi^{2}$ at each of the wavelet scales is calculated for each pixel:
 \begin{eqnarray}
-\chi^{2}_{\rm{red}} = \Phi^{j} {\bf{X}}_{r}  (\Phi^{j} {\bf{X}}_{r})^{-1} \, \Phi^{j} {\bf{X}}_{r} 
+\chi^{2}_{\rm{red}} =  ({\bf{W}}_{j}^{r})^{T}  ({\bf{W}}_{j}^{n})^{-1} \, {\bf{W}}_{j}^{r} 
 \end{eqnarray}
 As there is only one degree of freedom the reduced $\chi^{2}$ is just the $\chi^{2}$.
 \item The reduced $\chi^{2}$ is fed back into the quadtree to split the data into patches where $T$ and $\beta$ are constant enough to be well characterised by a MBB with a single value of $T$ and $\beta$ across all pixels within the patch. The final patches chosen are the quadtree determined super-pixels.  
